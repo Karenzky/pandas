@@ -6448,6 +6448,7 @@ class DataFrame(NDFrame, OpsMixin):
 
         axis = self._get_axis_number(axis)
         agg_axis = 1 - axis
+        print("DEBUG: axis = {}".format(axis))
 
         agg_obj = self
         if subset is not None:
